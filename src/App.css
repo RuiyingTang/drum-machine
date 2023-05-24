@@ -1,0 +1,71 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.App {
+  width: 60vw;
+  height: 60vh;
+  background-color: rgb(217, 216, 216);
+  border: 5px solid orange;
+}
+
+.container {
+  padding: 20px;
+}
+.drums {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 100px));
+  grid-template-rows: repeat(3, minmax(0, 80px));
+  grid-gap: 10px 10px;
+  justify-content: center;
+}
+
+.drum-pad {
+  /* width: 100px;
+  height: 80px; */
+  box-shadow: black 3px 3px 5px;
+  background-color: grey;
+  font-weight: bolder;
+  text-align: center;
+
+  border-radius: 5px;
+}
+.drum-pad:active {
+  background-color: orange;
+}
+
+.controls-container {
+}
+
+.select {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 21px;
+  padding: 1px;
+  background-color: black;
+}
+
+.select .inner {
+  width: 23px;
+  height: 18px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#display {
+  background-color: grey;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+}
+.volume-slider input {
+  width: 100%;
+}
